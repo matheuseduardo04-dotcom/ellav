@@ -948,8 +948,17 @@ img {
     padding: 60px 0;
   }
 
+  .about-image img {
+    height: 280px;
+  }
+
   .portfolio-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .portfolio-item {
+    aspect-ratio: 16/8.5;
   }
 
   .hero-buttons {
@@ -1033,6 +1042,18 @@ img {
 }
 
 @media (max-width: 480px) {
+  .about-image img {
+    height: 220px;
+  }
+
+  .portfolio-item {
+    aspect-ratio: 16/8;
+  }
+
+  .portfolio-overlay {
+    padding: 18px;
+  }
+
   .hero-watermark {
     font-size: clamp(78px, 27vw, 120px);
     letter-spacing: 0;
