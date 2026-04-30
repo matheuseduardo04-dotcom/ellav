@@ -571,6 +571,7 @@ img {
   overflow: hidden;
   padding: 30px 0;
   position: relative;
+  width: 100%;
 }
 
 .clients-marquee::before,
@@ -594,14 +595,22 @@ img {
 }
 
 .clients-track {
+  --clients-gap: 60px;
   display: flex;
-  gap: 60px;
+  gap: var(--clients-gap);
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: clientsLoop 28s linear infinite;
+  will-change: transform;
+}
+
+.clients-marquee:hover .clients-track {
+  animation-play-state: paused;
 }
 
 .client-logo {
+  flex: 0 0 auto;
   padding: 20px 30px;
   background: var(--white);
   border-radius: 12px;
@@ -626,6 +635,16 @@ img {
   border-color: var(--primary);
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(3, 22, 85, 0.1);
+}
+
+@keyframes clientsLoop {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - (var(--clients-gap) / 2)));
+  }
 }
 
 /* ==================== CONTATO ==================== */
@@ -972,12 +991,17 @@ img {
   }
 
   .clients-track {
-    gap: 20px;
+    --clients-gap: 20px;
   }
 
   .client-logo {
-    padding: 15px 25px;
+    padding: 14px 22px;
     font-size: 0.95rem;
+  }
+
+  .client-logo img {
+    max-height: 42px;
+    max-width: 130px;
   }
 }
 
