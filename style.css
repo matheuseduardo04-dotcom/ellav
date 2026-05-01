@@ -1164,10 +1164,23 @@ img {
   }
 
   .ellav-watermark {
-    font-size: clamp(6rem, 22vw, 12rem);
-    -webkit-text-stroke: 12px rgba(255, 255, 255, 0.08);
-    text-stroke: 12px rgba(255, 255, 255, 0.08);
-    letter-spacing: 0.06em;
+    font-size: clamp(10rem, 38vw, 18rem);
+    -webkit-text-stroke: 16px rgba(255, 255, 255, 0.08);
+    text-stroke: 16px rgba(255, 255, 255, 0.08);
+    letter-spacing: 0.02em;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-buttons .btn {
+    width: 280px;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 0.75rem;
   }
 
   .hero h1 {
@@ -1323,10 +1336,16 @@ img {
 
 @media (max-width: 480px) {
   .ellav-watermark {
-    font-size: clamp(4.5rem, 20vw, 6rem);
-    -webkit-text-stroke: 8px rgba(255, 255, 255, 0.08);
-    text-stroke: 8px rgba(255, 255, 255, 0.08);
-    letter-spacing: 0.04em;
+    font-size: clamp(7rem, 32vw, 10rem);
+    -webkit-text-stroke: 12px rgba(255, 255, 255, 0.08);
+    text-stroke: 12px rgba(255, 255, 255, 0.08);
+    letter-spacing: 0.02em;
+  }
+
+  .hero-buttons .btn {
+    width: 240px;
+    padding: 11px 16px;
+    font-size: 0.7rem;
   }
 
   .clients-marquee {
