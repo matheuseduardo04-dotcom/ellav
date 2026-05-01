@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://matheuseduardo04-dotcom.github.io/ellav/sitemap.xml
+Sitemap: https://ellav.ind.br/sitemap.xml
