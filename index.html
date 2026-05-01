@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -25,7 +26,7 @@
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Quem Somos</a></li>
           <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="projetos.html">Portfólio</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -43,9 +44,7 @@
     <div class="hero-bg"></div>
 
     <!-- Marca d'água ELLAV -->
-    <div class="hero-watermark" aria-hidden="true">
-      <span>E</span><span>L</span><span>L</span><span>A</span><span>V</span>
-    </div>
+    <span class="ellav-watermark" aria-hidden="true"><span>E</span><span>L</span><span>L</span><span>A</span><span>V</span></span>
 
     <div class="hero-content">
       <span class="hero-badge">Londrina — PR</span>
@@ -55,8 +54,12 @@
       </h1>
       <p>Ajudando a transformar ambientes e potencializar a experiência do cliente no varejo.</p>
       <div class="hero-buttons">
-        <a href="#portfolio" class="btn btn-primary">Ver Portfólio</a>
+        <a href="projetos.html" class="btn btn-primary">Ver Portfólio</a>
         <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+        <button class="btn btn-ia" id="openChat">
+          <img src="assets/ellav-ia-icon.png" alt="ELLAV IA">
+          Tire dúvidas com a nossa IA!
+        </button>
       </div>
     </div>
     <div class="scroll-indicator">
@@ -69,7 +72,13 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-text fade-in">
-          <span class="section-label">Quem Somos</span>
+          <div class="about-label-row">
+            <span class="section-label">Quem Somos</span>
+            <div class="about-badge">
+              <img src="https://static.wixstatic.com/media/fa3eb5_f84338ed26c94700b06e8f34a6003e89~mv2.png/v1/fill/w_516,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20Ellav%202024%20BRANCA.png" alt="ELLAV">
+              <span>Há mais de 5 anos</span>
+            </div>
+          </div>
           <h2 class="section-title">Nossa maior meta é ver o cliente<br>satisfeito!</h2>
           <p>A ELLAV é especialista em design e comunicação visual para supermercados. Criamos projetos que transformam ambientes comerciais, potencializando a experiência de compra dos clientes.</p>
           <p>Com soluções criativas e personalizadas, trabalhamos desde a sinalização de setores até a identidade visual completa do ponto de venda, sempre com foco em funcionalidade e estética.</p>
@@ -91,9 +100,13 @@
               <span class="stat-label">Profissionais Contratados</span>
             </div>
           </div>
+          <a href="projetos.html" class="btn btn-projetos">Clique para ver alguns de nossos projetos</a>
         </div>
-        <div class="about-image fade-in">
-          <img src="assets/PHOTO-2026-04-29-20-08-54.jpg" alt="Projeto de comunicação visual ELLAV em supermercado" loading="lazy">
+        <div class="about-video fade-in">
+          <video id="aboutVideo" autoplay muted playsinline preload="auto"
+            poster="https://static.wixstatic.com/media/fa3eb5_aaee9fe5f784429cba619d6d1491b35a/980w_552h.jpg"
+            src="https://video.wixstatic.com/video/fa3eb5_aaee9fe5f784429cba619d6d1491b35a/720p/mp4/file.mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -127,82 +140,6 @@
     </div>
   </section>
 
-  <!-- PORTFÓLIO -->
-  <section class="section portfolio" id="portfolio">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Portfólio</span>
-        <h2 class="section-title">Nossos Projetos</h2>
-        <p class="section-subtitle">Conheça alguns dos nossos trabalhos de comunicação visual para supermercados</p>
-      </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item fade-in">
-          <img src="assets/PHOTO-2026-04-29-20-08-53.jpg" alt="Projeto Supermercados Bavaresco — vista geral" loading="lazy">
-          <div class="portfolio-overlay">
-            <h4>Supermercados Bavaresco</h4>
-            <span>Ambientação Completa</span>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in">
-          <img src="assets/PHOTO-2026-04-29-20-08-54.jpg" alt="Setor de Padaria e Confeitaria" loading="lazy">
-          <div class="portfolio-overlay">
-            <h4>Padaria e Confeitaria</h4>
-            <span>Sinalização de Setor</span>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in">
-          <img src="assets/PHOTO-2026-04-29-20-08-52 3.jpg" alt="Setor Hortifruti" loading="lazy">
-          <div class="portfolio-overlay">
-            <h4>Hortifruti</h4>
-            <span>Projeto Luminoso</span>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in">
-          <img src="assets/PHOTO-2026-04-29-20-08-51.jpg" alt="Setor Açougue com iluminação especial" loading="lazy">
-          <div class="portfolio-overlay">
-            <h4>Açougue</h4>
-            <span>Ambientação e Sinalização</span>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in">
-          <img src="assets/PHOTO-2026-04-29-20-08-54 4.jpg" alt="Setor de Laticínios" loading="lazy">
-          <div class="portfolio-overlay">
-            <h4>Laticínios</h4>
-            <span>Letreiro Luminoso</span>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in">
-          <img src="assets/PHOTO-2026-04-29-20-08-52 5.jpg" alt="Setor de Bebidas Geladas" loading="lazy">
-          <div class="portfolio-overlay">
-            <h4>Bebidas e Setores</h4>
-            <span>Comunicação Visual</span>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in">
-          <img src="assets/PHOTO-2026-04-29-20-08-54 2.jpg" alt="Setor de Frios e Laticínios" loading="lazy">
-          <div class="portfolio-overlay">
-            <h4>Frios e Pães</h4>
-            <span>Layout de Setor</span>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in">
-          <img src="assets/PHOTO-2026-04-29-20-08-52 4.jpg" alt="Vista geral do supermercado" loading="lazy">
-          <div class="portfolio-overlay">
-            <h4>Vista Panorâmica</h4>
-            <span>Projeto Integrado</span>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in">
-          <img src="assets/PHOTO-2026-04-29-20-08-53 2.jpg" alt="Visão geral com caixas e setores" loading="lazy">
-          <div class="portfolio-overlay">
-            <h4>Área de Checkout</h4>
-            <span>Comunicação Visual</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CLIENTES -->
   <section class="section clients" id="clientes">
     <div class="container">
@@ -218,7 +155,7 @@
           <div class="clients-logo-group">
             <div class="client-logo"><img src="assets/logo-bavaresco.png" alt="Supermercados Bavaresco"></div>
             <div class="client-logo"><img src="assets/logo-supera.png" alt="Super A Atacadista"></div>
-            <div class="client-logo"><img src="assets/logo-molicenter.svg" alt="Molicenter Supermercados"></div>
+            <div class="client-logo"><img src="assets/logo-molicenter.jpg" alt="Molicenter Supermercados"></div>
             <div class="client-logo"><img src="https://static.wixstatic.com/media/fa307f_77ea24bfa25746c5b202eeb71da7559a~mv2.png/v1/fill/w_307%2Ch_102%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/logo_cabe%C3%A7alho.png" alt="Tonhão Maxi"></div>
             <div class="client-logo"><img src="https://www.supergolff.com.br/site/views/assets/_images/logo.svg" alt="Super Golff"></div>
             <div class="client-logo"><img src="https://www.boxatacadista.com/storage/imagens/2/logo/c7VVsqOMF5Umnn1YhPCDeJ7ClD9ufVvnZAIug0tu.png" alt="Box Atacadista"></div>
@@ -227,11 +164,14 @@
             <div class="client-logo"><img src="https://assets.zyrosite.com/YleL1Kn2gOuWkgML/png-branca-YrDLj5zQB3uZrWn0.png" alt="Grupo Intelect"></div>
             <div class="client-logo client-logo-dark"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b1/53/97/b1539790-17a2-b59c-0081-df723fb6a0fa/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.png" alt="Viscardi"></div>
             <div class="client-logo client-logo-dark"><img src="https://images.seeklogo.com/logo-png/33/1/verona-supermercados-logo-png_seeklogo-337996.png" alt="Verona Supermercados"></div>
+            <div class="client-logo"><img src="assets/logo-muffato.jpg" alt="Super Muffato"></div>
+            <div class="client-logo"><img src="assets/logo-saviski.png" alt="Supermercado Saviski"></div>
+            <div class="client-logo"><img src="assets/logo-angeloni.png" alt="Angeloni"></div>
           </div>
           <div class="clients-logo-group" aria-hidden="true">
             <div class="client-logo"><img src="assets/logo-bavaresco.png" alt=""></div>
             <div class="client-logo"><img src="assets/logo-supera.png" alt=""></div>
-            <div class="client-logo"><img src="assets/logo-molicenter.svg" alt=""></div>
+            <div class="client-logo"><img src="assets/logo-molicenter.jpg" alt=""></div>
             <div class="client-logo"><img src="https://static.wixstatic.com/media/fa307f_77ea24bfa25746c5b202eeb71da7559a~mv2.png/v1/fill/w_307%2Ch_102%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/logo_cabe%C3%A7alho.png" alt=""></div>
             <div class="client-logo"><img src="https://www.supergolff.com.br/site/views/assets/_images/logo.svg" alt=""></div>
             <div class="client-logo"><img src="https://www.boxatacadista.com/storage/imagens/2/logo/c7VVsqOMF5Umnn1YhPCDeJ7ClD9ufVvnZAIug0tu.png" alt=""></div>
@@ -240,6 +180,9 @@
             <div class="client-logo"><img src="https://assets.zyrosite.com/YleL1Kn2gOuWkgML/png-branca-YrDLj5zQB3uZrWn0.png" alt=""></div>
             <div class="client-logo client-logo-dark"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b1/53/97/b1539790-17a2-b59c-0081-df723fb6a0fa/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.png" alt=""></div>
             <div class="client-logo client-logo-dark"><img src="https://images.seeklogo.com/logo-png/33/1/verona-supermercados-logo-png_seeklogo-337996.png" alt=""></div>
+            <div class="client-logo"><img src="assets/logo-muffato.jpg" alt=""></div>
+            <div class="client-logo"><img src="assets/logo-saviski.png" alt=""></div>
+            <div class="client-logo"><img src="assets/logo-angeloni.png" alt=""></div>
           </div>
         </div>
       </div>
@@ -260,21 +203,21 @@
           <p>Clique no canal desejado ou entre em contato diretamente. Estamos prontos para transformar o seu espaço comercial.</p>
           <div class="contact-methods">
             <a href="tel:+554333443939" class="contact-method">
-              <div class="contact-method-icon">📞</div>
+              <div class="contact-method-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
               <div class="contact-method-text">
                 <strong>Fone</strong>
                 <span>(43) 3344-3939</span>
               </div>
             </a>
             <a href="mailto:projetos@ellav.ind.br" class="contact-method">
-              <div class="contact-method-icon">✉️</div>
+              <div class="contact-method-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
               <div class="contact-method-text">
                 <strong>E-mail</strong>
                 <span>projetos@ellav.ind.br</span>
               </div>
             </a>
             <a href="https://wa.me/5543988632817" target="_blank" rel="noopener" class="contact-method">
-              <div class="contact-method-icon">💬</div>
+              <div class="contact-method-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
               <div class="contact-method-text">
                 <strong>WhatsApp</strong>
                 <span>(43) 98863-2817</span>
@@ -291,13 +234,25 @@
             </a>
           </div>
           <div class="contact-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116747.40203668511!2d-51.2134!3d-23.3045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb4135e3b26445%3A0xfea0181ff3d21c68!2sLondrina%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Localização ELLAV em Londrina-PR">
-            </iframe>
+            <img src="assets/mapa-ellav.jpg" alt="Localização ELLAV em Londrina-PR" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="contact-reviews fade-in">
+        <div class="reviews-header">
+          <h3>Avaliações</h3>
+          <div class="reviews-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <img src="assets/avaliacao-valdemir.jpg" alt="Avaliação de Valdemir Forio" loading="lazy">
+            <button class="review-heart" aria-label="Curtir avaliação">♡</button>
+          </div>
+          <div class="review-card">
+            <img src="assets/avaliacao-luiz.jpg" alt="Avaliação de Luiz Rangel" loading="lazy">
+            <button class="review-heart" aria-label="Curtir avaliação">♡</button>
           </div>
         </div>
       </div>
@@ -315,7 +270,7 @@
         <div class="footer-links">
           <a href="#inicio">Início</a>
           <a href="#sobre">Quem Somos</a>
-          <a href="#portfolio">Portfólio</a>
+          <a href="projetos.html">Portfólio</a>
           <a href="#contato">Contato</a>
         </div>
       </div>
@@ -354,6 +309,155 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    const aboutVideo = document.getElementById('aboutVideo');
+    if (aboutVideo) {
+      aboutVideo.playbackRate = 2;
+      aboutVideo.loop = false;
+      aboutVideo.addEventListener('timeupdate', () => {
+        if (aboutVideo.duration - aboutVideo.currentTime < 1) {
+          aboutVideo.pause();
+        }
+      });
+    }
+
+    document.querySelectorAll('.review-heart').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('liked');
+        btn.textContent = btn.classList.contains('liked') ? '♥' : '♡';
+      });
+    });
+  </script>
+
+  <!-- ELLAV IA CHAT -->
+  <div class="ia-chat-overlay" id="chatOverlay"></div>
+  <div class="ia-chat" id="chatBox">
+    <div class="ia-chat-header">
+      <div class="ia-chat-header-info">
+        <img src="assets/ellav-ia-icon.png" alt="ELLAV IA">
+        <div>
+          <strong>ELLAV IA</strong>
+          <span>Online</span>
+        </div>
+      </div>
+      <button class="ia-chat-close" id="closeChat">&times;</button>
+    </div>
+    <div class="ia-chat-messages" id="chatMessages">
+    </div>
+    <div class="ia-chat-input">
+      <input type="text" id="chatInput" placeholder="Digite sua dúvida..." autocomplete="off">
+      <button id="chatSend" aria-label="Enviar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    var chatBox = document.getElementById('chatBox');
+    var chatOverlay = document.getElementById('chatOverlay');
+    var chatMessages = document.getElementById('chatMessages');
+    var chatInput = document.getElementById('chatInput');
+    var chatSend = document.getElementById('chatSend');
+    var openChat = document.getElementById('openChat');
+    var closeChat = document.getElementById('closeChat');
+    var chatOpened = false;
+
+    function addMessage(text, from) {
+      var msg = document.createElement('div');
+      msg.className = 'ia-msg ia-msg-' + from;
+      msg.textContent = text;
+      chatMessages.appendChild(msg);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function showTyping() {
+      var typing = document.createElement('div');
+      typing.className = 'ia-msg ia-msg-bot ia-typing';
+      typing.innerHTML = '<span></span><span></span><span></span>';
+      typing.id = 'typingIndicator';
+      chatMessages.appendChild(typing);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function removeTyping() {
+      var t = document.getElementById('typingIndicator');
+      if (t) t.remove();
+    }
+
+    function getResponse(q) {
+      var query = q.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+      if (query.match(/hor[aá]rio|funciona|abre|fecha|expediente/))
+        return 'Nosso horário de atendimento é de segunda a sexta, em horário comercial. Para confirmar, ligue: (43) 3344-3939.';
+      if (query.match(/telefone|ligar|fone|numero/))
+        return 'Nosso telefone é (43) 3344-3939. Você também pode nos chamar no WhatsApp: (43) 98863-2817.';
+      if (query.match(/whatsapp|whats|zap|wpp/))
+        return 'Nosso WhatsApp é (43) 98863-2817. Clique aqui para chamar: wa.me/5543988632817';
+      if (query.match(/email|e-mail|mail/))
+        return 'Nosso e-mail é projetos@ellav.ind.br. Fique à vontade para enviar sua solicitação!';
+      if (query.match(/endereco|onde fica|localizacao|localiza|mapa|cidade/))
+        return 'A ELLAV fica em Londrina, PR. Você pode ver nossa localização na seção de Contato do site!';
+      if (query.match(/orcamento|orcar|preco|valor|custo|quanto custa|cobr/))
+        return 'Para solicitar um orçamento personalizado, entre em contato pelo WhatsApp (43) 98863-2817 ou pelo e-mail projetos@ellav.ind.br.';
+      if (query.match(/quem|sobre|empresa|ellav|historia|tempo/))
+        return 'A ELLAV é especialista em design e comunicação visual para supermercados, com mais de 5 anos de atuação. Já desenvolvemos mais de 800 projetos, atendemos 300+ clientes em 150+ cidades, com uma equipe de 200+ profissionais!';
+      if (query.match(/servico|faz|trabalho|area|atua|estrutura|oferece/))
+        return 'Trabalhamos com comunicação visual completa para supermercados: sinalização de setores, letreiros luminosos, ambientação, identidade visual do ponto de venda e muito mais!';
+      if (query.match(/cliente|atend|parceiro|supermercado|mercado/))
+        return 'Atendemos grandes redes como Super Muffato, Condor, Super Golff, Angeloni, Jacomar, Bavaresco, Molicenter, Box Atacadista, Saviski, Viscardi, Verona, entre outros!';
+      if (query.match(/portfolio|projeto|foto|trabalho|exemplo|ver/))
+        return 'Você pode conferir nossos projetos na página de Portfólio! Temos trabalhos com fachadas, setores internos, sinalizações e muito mais.';
+      if (query.match(/contato|falar|conversar|atendimento/))
+        return 'Você pode nos contactar por: Fone (43) 3344-3939, WhatsApp (43) 98863-2817 ou E-mail projetos@ellav.ind.br. Estamos prontos para atender!';
+      if (query.match(/ola|oi|bom dia|boa tarde|boa noite|hey|hi|eai|e ai/))
+        return 'Olá! Como posso te ajudar? Pode perguntar sobre nossos serviços, projetos, contato ou qualquer dúvida sobre a ELLAV!';
+      if (query.match(/obrigad|valeu|agradeco|thanks/))
+        return 'Por nada! Se tiver mais alguma dúvida, é só perguntar. Estamos aqui para ajudar!';
+      return 'Não encontrei uma resposta específica para isso, mas posso te ajudar com informações sobre nossos serviços, projetos, contato, localização ou orçamento. O que gostaria de saber?';
+    }
+
+    function sendMessage() {
+      var text = chatInput.value.trim();
+      if (!text) return;
+      addMessage(text, 'user');
+      chatInput.value = '';
+      showTyping();
+      var delay = 800 + Math.random() * 700;
+      setTimeout(function() {
+        removeTyping();
+        addMessage(getResponse(text), 'bot');
+      }, delay);
+    }
+
+    openChat.addEventListener('click', function(e) {
+      e.preventDefault();
+      chatBox.classList.add('active');
+      chatOverlay.classList.add('active');
+      if (!chatOpened) {
+        chatOpened = true;
+        setTimeout(function() {
+          addMessage('Olá! Sou a assistente virtual da ELLAV, tire suas dúvidas aqui!', 'bot');
+        }, 400);
+      }
+      setTimeout(function() { chatInput.focus(); }, 300);
+    });
+
+    closeChat.addEventListener('click', function() {
+      chatBox.classList.remove('active');
+      chatOverlay.classList.remove('active');
+    });
+
+    chatOverlay.addEventListener('click', function() {
+      chatBox.classList.remove('active');
+      chatOverlay.classList.remove('active');
+    });
+
+    chatSend.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') sendMessage();
+    });
+  })();
   </script>
 
 </body>
