@@ -1290,14 +1290,7 @@ img {
   }
 
   .about-photo-mobile .about-seal {
-    bottom: 8px;
-    right: 8px;
-    padding: 5px 10px;
-    border-radius: 8px;
-  }
-
-  .about-photo-mobile .about-seal img {
-    height: 12px;
+    display: none;
   }
 
   .about-stats {
