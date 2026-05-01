@@ -5,27 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ELLAV Comunicação Visual — Soluções criativas em design e comunicação visual para supermercados em Londrina-PR.">
-  <meta name="keywords" content="comunicação visual, supermercados, design, sinalização, Londrina, ELLAV">
-  <meta name="author" content="ELLAV Comunicação Visual">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ellav.ind.br/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="ELLAV | Comunicação Visual para Supermercados">
-  <meta property="og:description" content="Soluções criativas em design e comunicação visual para supermercados em Londrina-PR.">
-  <meta property="og:image" content="assets/logo-ellav-branca.png">
-  <meta property="og:url" content="https://ellav.ind.br/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ELLAV | Comunicação Visual para Supermercados">
-  <meta name="twitter:description" content="Soluções criativas em design e comunicação visual para supermercados em Londrina-PR.">
   <title>ELLAV | Comunicação Visual para Supermercados</title>
 
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
   <link rel="stylesheet" href="style.css">
-
+  
 </head>
 <body>
 
@@ -36,7 +21,7 @@
         <img src="assets/logo-ellav-branca.png" alt="ELLAV Comunicação Visual" loading="eager">
       </a>
 
-      <nav aria-label="Navegação principal">
+      <nav>
         <ul class="nav-list" id="navList">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Quem Somos</a></li>
@@ -54,13 +39,12 @@
     </div>
   </header>
 
-  <main>
   <!-- HERO -->
   <section class="hero" id="inicio">
     <div class="hero-bg"></div>
 
     <!-- Marca d'água ELLAV -->
-    <span class="ellav-watermark" aria-hidden="true"></span>
+    <span class="ellav-watermark" aria-hidden="true"><span>E</span><span>L</span><span>L</span><span>A</span><span>V</span></span>
 
     <div class="hero-content">
       <span class="hero-badge">Londrina — PR</span>
@@ -73,7 +57,6 @@
         <a href="projetos.html" class="btn btn-primary">Ver Portfólio</a>
         <a href="#contato" class="btn btn-outline">Fale Conosco</a>
         <button class="btn btn-ia" id="openChat">
-          <img src="assets/ellav-ia-icon.png" alt="ELLAV IA">
           Tire dúvidas com a nossa IA!
         </button>
       </div>
@@ -96,6 +79,12 @@
             </div>
           </div>
           <h2 class="section-title">Nossa maior meta é ver o cliente<br>satisfeito!</h2>
+          <div class="about-photo-mobile fade-in">
+            <img src="assets/ellav-fachada.jpg" alt="Fachada ELLAV Design & Interiores" loading="lazy">
+            <span class="about-seal">
+              <img src="assets/logo-ellav-branca.png" alt="ELLAV">
+            </span>
+          </div>
           <p>A ELLAV é especialista em design e comunicação visual para supermercados. Criamos projetos que transformam ambientes comerciais, potencializando a experiência de compra dos clientes.</p>
           <p>Com soluções criativas e personalizadas, trabalhamos desde a sinalização de setores até a identidade visual completa do ponto de venda, sempre com foco em funcionalidade e estética.</p>
           <div class="about-stats">
@@ -116,13 +105,19 @@
               <span class="stat-label">Profissionais Contratados</span>
             </div>
           </div>
-          <a href="projetos.html" class="btn btn-projetos">Clique para ver alguns de nossos projetos</a>
+          <a href="projetos.html" class="btn btn-projetos">Clique para ver
+            
+            
+             alguns de nossos projetos</a>
         </div>
         <div class="about-video fade-in">
           <video id="aboutVideo" autoplay muted playsinline preload="auto"
-            poster="assets/video-poster.jpg"
+            poster="assets/ellav-fachada.jpg"
             src="assets/video-ellav.mp4">
           </video>
+          <span class="about-seal">
+            <img src="assets/logo-ellav-branca.png" alt="ELLAV">
+          </span>
         </div>
       </div>
     </div>
@@ -208,69 +203,73 @@
   <!-- CONTATO -->
   <section class="section contact" id="contato">
     <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Contato</span>
-        <h2 class="section-title">Fale com a Gente</h2>
-        <p class="section-subtitle">Entre em contato e solicite um orçamento para o seu projeto</p>
+      <div class="contact-top fade-in">
+        <span class="contact-label">Contato</span>
+        <h2 class="contact-title">Vamos transformar<br>o seu espaço?</h2>
       </div>
+
       <div class="contact-grid">
-        <div class="contact-info fade-in">
-          <h3>Vamos conversar sobre o seu projeto?</h3>
-          <p>Clique no canal desejado ou entre em contato diretamente. Estamos prontos para transformar o seu espaço comercial.</p>
-          <div class="contact-methods">
-            <a href="tel:+554333443939" class="contact-method">
-              <div class="contact-method-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-              <div class="contact-method-text">
-                <strong>Fone</strong>
-                <span>(43) 3344-3939</span>
-              </div>
-            </a>
-            <a href="mailto:projetos@ellav.ind.br" class="contact-method">
-              <div class="contact-method-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
-              <div class="contact-method-text">
-                <strong>E-mail</strong>
-                <span>projetos@ellav.ind.br</span>
-              </div>
-            </a>
-            <a href="https://wa.me/5543988632817" target="_blank" rel="noopener" class="contact-method">
-              <div class="contact-method-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
-              <div class="contact-method-text">
-                <strong>WhatsApp</strong>
-                <span>(43) 98863-2817</span>
-              </div>
-            </a>
-          </div>
+        <div class="contact-channels fade-in">
+          <a href="https://wa.me/5543988632817" target="_blank" rel="noopener" class="contact-channel">
+            <div class="channel-icon channel-icon--whatsapp">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </div>
+            <div class="channel-text">
+              <span class="channel-label">WhatsApp</span>
+              <span class="channel-value">(43) 98863-2817</span>
+            </div>
+          </a>
+
+          <a href="tel:+554333443939" class="contact-channel">
+            <div class="channel-icon channel-icon--phone">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16.556 12.906l-.455.453s-1.083 1.076-4.038-1.862-1.872-4.035-1.872-4.035l.286-.286c.707-.702.774-1.83.157-2.654L9.374 2.86C8.61 1.84 7.135 1.705 6.26 2.575l-1.57 1.564c-.394.392-.643.938-.678 1.523-.11 1.837.52 5.32 4.27 9.053 3.39 3.372 6.607 4.353 8.467 4.302a2.13 2.13 0 0 0 1.447-.655l1.502-1.493c.9-.893.753-2.396-.298-3.14l-1.475-1.044a2.07 2.07 0 0 0-2.37.22z"/></svg>
+            </div>
+            <div class="channel-text">
+              <span class="channel-label">Telefone</span>
+              <span class="channel-value">(43) 3344-3939</span>
+            </div>
+          </a>
+
+          <a href="mailto:projetos@ellav.ind.br" class="contact-channel">
+            <div class="channel-icon channel-icon--email">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6" fill="none" stroke="var(--primary-dark)" stroke-width="1.5"/></svg>
+            </div>
+            <div class="channel-text">
+              <span class="channel-label">E-mail</span>
+              <span class="channel-value">projetos@ellav.ind.br</span>
+            </div>
+          </a>
         </div>
-        <div class="contact-right fade-in">
-          <div class="contact-map">
-            <a href="https://maps.google.com/?q=ELLAV+Design+Interiores+Londrina+PR" target="_blank" rel="noopener">
-              <img src="assets/mapa-ellav.jpg" alt="Localização ELLAV em Londrina-PR" loading="lazy">
-            </a>
+
+        <div class="contact-location fade-in">
+          <div class="location-card">
+            <img src="assets/mapa-ellav.jpg" alt="Localização ELLAV em Londrina-PR" class="location-bg" loading="lazy">
+            <div class="location-overlay">
+              <div class="location-details">
+                <span class="location-label">Endereço</span>
+                <p class="location-address">Londrina — PR</p>
+                <p class="location-desc">Comunicação visual para supermercados em todo o Brasil</p>
+              </div>
+              <a href="https://maps.google.com/?q=ELLAV+Comunicação+Visual+Londrina+PR" target="_blank" rel="noopener" class="btn-map">
+                Ver no mapa
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="contact-reviews fade-in">
-        <div class="reviews-header">
-          <h3>Avaliações</h3>
-          <div class="reviews-stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-        </div>
-        <div class="reviews-grid">
-          <div class="review-card">
-            <img src="assets/avaliacao-valdemir.jpg" alt="Avaliação de Valdemir Forio" loading="lazy">
-            <button class="review-heart" aria-label="Curtir avaliação">♡</button>
-          </div>
-          <div class="review-card">
-            <img src="assets/avaliacao-luiz.jpg" alt="Avaliação de Luiz Rangel" loading="lazy">
-            <button class="review-heart" aria-label="Curtir avaliação">♡</button>
-          </div>
+
+      <div class="contact-cta fade-in">
+        <div class="cta-content">
+          <p class="cta-text">Solicite um orçamento personalizado</p>
+          <a href="https://wa.me/5543988632817?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20comunicação%20visual." target="_blank" rel="noopener" class="btn-cta">
+            Chamar no WhatsApp
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
       </div>
     </div>
   </section>
-
-  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -279,7 +278,7 @@
         <div class="footer-logo">
           <img src="assets/logo-ellav-branca.png" alt="ELLAV">
         </div>
-        <p class="footer-copy">&copy; 2025 ELLAV Comunicação Visual. Todos os direitos reservados.</p>
+        <p class="footer-copy">&copy; 2024 ELLAV Comunicação Visual. Todos os direitos reservados.</p>
         <div class="footer-links">
           <a href="#inicio">Início</a>
           <a href="#sobre">Quem Somos</a>
@@ -334,12 +333,6 @@
       });
     }
 
-    document.querySelectorAll('.review-heart').forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.classList.toggle('liked');
-        btn.textContent = btn.classList.contains('liked') ? '♥' : '♡';
-      });
-    });
   </script>
 
   <!-- ELLAV IA CHAT -->
